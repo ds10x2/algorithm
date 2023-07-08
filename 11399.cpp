@@ -1,5 +1,3 @@
-//4963
-
 #include <iostream>
 #include <queue>
 using namespace std;
@@ -23,7 +21,6 @@ int main() {
 
 	for (int i = 1; i <= n; i++) {
 		sum[i] = sum[i - 1] + q.top();
-		cout << sum[i] << " ";
 		q.pop();
 	}
 
