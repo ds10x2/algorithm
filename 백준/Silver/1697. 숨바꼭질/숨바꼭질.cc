@@ -45,20 +45,14 @@ void BFS() {
 		}
 
 		//x-1로 이동
-		if (!can_move(now - 1, cnt + 1)) {
-			move(now - 1, cnt + 1);
-		}
+		if (!can_move(now - 1, cnt + 1)) move(now - 1, cnt + 1);
 
 		//x+1로 이동
-		if (!can_move(now + 1, cnt + 1)) {
-			move(now + 1, cnt + 1);
-		}
-
+		if (!can_move(now + 1, cnt + 1)) move(now + 1, cnt + 1);
 
 		//2*x로 이동
-		if (!can_move(2 * now, cnt + 1)) {
-			move(2 * now, cnt + 1);
-		}
+		if (!can_move(2 * now, cnt + 1)) move(2 * now, cnt + 1);
+
 	}
 }
 
